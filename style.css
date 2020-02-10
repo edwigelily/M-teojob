@@ -49,6 +49,29 @@ h1{
     height: 5vh;
     width: 45vh;
 }
+#mot_de_passe{
+    width: 100%;
+    border: 1px solid rgba(146, 145, 145, 0.904);
+    display: flex;
+    justify-content: space-between;
+}
+#mot_de_passe img{
+    width: 4%;
+    opacity: 0.5;
+    border: none;
+
+}
+#password{
+    border: none;
+    width: 80%;
+}
+input:focus{
+     outline-color: rgb(30, 221, 247);
+
+}
+#mot_de_passe input:focus{
+    outline-color: white;
+}
 .deux{
     display: flex;
     flex-direction: column;
@@ -58,10 +81,10 @@ h1{
 }
 .deux label{
     margin-top: 2vh;
-}
+} 
 .trois input{
     display: none;
-}
+} 
 .trois{
     display: flex;
     flex-wrap: wrap;
@@ -69,25 +92,76 @@ h1{
 .trois label{
     width: 110px;
     height: 35px;
-    background-color: rgba(136, 165, 168, 0.219);
+    background-color: #f2f2f2;
+    color: rgb(71, 71, 71);
     display: inline-block;
+    text-align: center;
     margin: 1%;
     word-wrap: break-word;
     padding: 1%;
 }
+input[type=checkbox]:checked+label{
+    background-color:  rgb(68, 139, 231);
+    color: #FFF;
+
+}
+input:focus+label{
+    background-color:  rgb(68, 139, 231);
+}
 a{
     text-decoration: none;
     color: black;
-
 }
 #fin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #b9c2ca;
+    color: rgb(245, 245, 220);
+    height: 5vh;
+    width: 9vw;
+    border-radius: 8px;
+    font-size: 0.95em;
+}
+#fin input{
+    display: none;
+}
+#fin label{
+    display: inline-block;
+}
 
-    width: 110px;
-    height: 35px;
-    background-color: blueB;
-    margin-bottom: 0;
-    padding: 1%;
+input[type=radio]+label{
+    width: 50%;
+    height: 100%;
+    background-color: #f0f4f7;
 
+}
+input[value=oui]:checked+label{
+    background-color:  rgb(68, 139, 231);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: 0.5s;
+}
+input[value=oui]:not(:checked)+label{
+    background-color: #f0f4f7;
+    color: #f0f4f7;
+    transition: 0.5s;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+input[value=non]:checked+label{
+    background-color: #b9c2ca;
+    transition: 0.5s;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+input[value=non]:not(:checked)+label{
+    background-color: #b9c2ca;
+    color: #f0f4f7;
+    transition: 0.5s;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .condition a{
     color: rgb(71, 71, 71);
@@ -95,17 +169,18 @@ a{
 }
 .condition{
     margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
 }
-.continuer{
+button{
+    background-color:  rgb(68, 139, 231);
+    color: white;
+    border: none;
     width: 110px;
     height: 35px;
-    margin: 1%;
+    margin-bottom: 0;
     padding: 1%;
-    background-color:  rgb(68, 139, 231);
-    text-align: center;
-    display: inline-block;
     position: relative;
-    top: 150px;
-    left: -150px;
-    color: white;
+    top: 25vh;
+    left: 40vh;
 }

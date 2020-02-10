@@ -29,7 +29,10 @@
                 <input type="email" name="email" id="email"placeholder="Votre adress e-mail">
     
                 <label for="password">Mot de passe</label>
-                <input type="password" name="password" id="password" placeholder="choisissez votre mot de passe">
+                <div id="mot_de_passe"><input type="password" name="password" id="password" placeholder="choisissez votre mot de passe">
+                <img src="assets/img/visible_eye_4387.ico" alt="oeil">
+                
+                </div>
                 
                 <label for="poste"> Poste recherché</label>
                 <input type="poste"  placeholder="Ex: chef de projet, cuisinier...">
@@ -41,33 +44,51 @@
        <br> <label for=""> Types de contracts recherchés</label><br>
         <div class="trois">
 
-            <label for="un" style="background-color: rgb(68, 139, 231);">CDI</label>
-            <input type="checkbox" value="CDI" name="choix" id="un">
             
-            <label for="deux">CDD</label>
+            <input type="checkbox" value="CDI" name="choix" id="un" checked>
+            <label for="un">CDI</label>
+            
             <input type="checkbox" value="CDD" name="choix" id="deux">
+            <label for="deux">CDD</label>
+
             
-            <label for="trois">Indépendant/ Franchisé</label>
             <input type="checkbox" value="Indépendant/Franchisé" name="choix" id="trois">
+            <label for="trois">Indépendant/ Franchisé</label>
+
             
+            <input type="checkbox" value="Intérim" name="choix" id="quatre">
             <label for="quatre">Intérim</label>
-            <input type="checkbox" value="Intérim" name="interim" name="choix" id="quatre">
+
             
+            <input type="checkbox" value="Stage" name="choix" id="cinq">
             <label for="cinq">Stage</label>
-            <input type="checkbox" value="Stage" name="stage" name="choix" id="cinq">
+
             
-            <label for="six">Alternance/ Apprentissage</label>
             <input type="checkbox" value="Alternance/Apprentissage" name="choix" id="six">
+            <label for="six">Alternance/ Apprentissage</label>
+
             
             <label for=""style="width: 140px; background-color: #FFF;"><a href="">+ de type de contrat</a></label>
-            <div class="condition">
-                J'accepte les <a href="">conditions générales</a>  pour créer mon compte, <br>
+
+        </div>   
+        <div class="condition">
+            <div>
+
+                J'accepte les <a href="">conditions générales</a>  pour créer mon compte,<br>
                 bénéficier des services de matching et postuler aux offres :
+            
             </div>
-            <div class="continuer">
-                <label for="fin">Continuer</label><input type="submit" value="Continuer" id="fin">
-            </div>
-        </div>           
+        <div id="fin">
+            <input type="radio" name="position" id="oui" value="oui" required>
+            <label for="oui">OUI</label>
+            
+
+            <input type="radio" name="position" id="non" value="non">
+            <label for="non">NON</label>    
+
+        </div>
+        </div>    
+            <button type="submit" value="Continuer">Continuer</button>
     </form>
 </main>
 </body>
