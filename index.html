@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="assets/img/icons8-colombe-100.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Créer mon profil Meteojob</title>
 </head>
 <body>
@@ -31,18 +32,21 @@
                
                 <label for="password">Mot de passe</label>
                 <div class="mot_de_passe">
-                     <input type="password" name="password" id="password" placeholder="choisissez votre mot de passe">
-                     <img src="assets/img/visible_eye_4387.ico" alt="oeil">
+                     <input type="password" name="password" id="password" placeholder="Choisissez votre mot de passe">
+
+                     <i class="fa fa-eye" aria-hidden="true"></i>
                 </div>
 
                 <label for="poste"> Poste recherché</label>
-                <input type="poste" placeholder="Ex: chef de projet, cuisinier...">
+                <input type="poste" placeholder="Ex: Chef de projet, cuisinier...">
                 
                 <label for="travail">Ou souhaitez-vous,travailler?</label>
                 <input type="text" placeholder="Ex: Essonne, Nantes, Bretagne...">
             </div>
-            <span> Types de contracts recherchés</span><br>
-            
+            <div id="contrat">
+                Types de contrats recherchés
+
+            </div>
         <div class="trois">
 
                 <input type="checkbox" value="CDI" name="choix" id="un" checked>
@@ -63,22 +67,19 @@
                 <input type="checkbox" value="Alternance/Apprentissage" name="choix" id="six">
                 <label for="six">Alternance/ Apprentissage</label>
 
-                <label for=""style="width: 140px; background-color: #FFF;">
                     <a href="">+ de type de contrat</a>
-                </label>
+            
         </div>  
         <div class="condition">
 
             <div>
-                <br>
-
                 J'accepte les <a href="">conditions générales</a> pour créer mon compte,<br>
                 bénéficier des services de matching et postuler aux offres :
             </div>
 
-                <br>
 
             <div id="fin">
+
     
                 <input type="radio" name="position" id="oui" value="oui" required checked>
                 <label for="oui">OUI</label>
@@ -87,12 +88,14 @@
                 <label for="non">NON</label> 
                 
             </div>
-        </div> 
+        </div>
 
-            <button type="submit" value="Continuer">Continuer</button>
-
-        </div>         
     </form>
+
+        <footer>
+            <button type="submit" value="Continuer">Continuer</button>
+        </footer>
+
 </main>
 </body>
 </html>
