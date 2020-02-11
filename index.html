@@ -17,78 +17,81 @@
             <div class="un">
                 <div>
                     <label for="prenom">Prénom</label><br>
-                    <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required autofocus>   
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required autofocus> 
                 </div>
                 <div>
                     <label for="nom">Nom</label><br>
                     <input type="text" name="nom" id="nom" required placeholder="Votre Nom">
                 </div>
-            </div>
+            </div>   
+
             <div class="deux">
-                <label for="email">Adresse e-mail </label>
+                <label for="email">Adresse e-mail</label>
                 <input type="email" name="email" id="email"placeholder="Votre adress e-mail">
-    
+               
                 <label for="password">Mot de passe</label>
-                <div id="mot_de_passe"><input type="password" name="password" id="password" placeholder="choisissez votre mot de passe">
-                <img src="assets/img/visible_eye_4387.ico" alt="oeil">
-                
+                <div class="mot_de_passe">
+                     <input type="password" name="password" id="password" placeholder="choisissez votre mot de passe">
+                     <img src="assets/img/visible_eye_4387.ico" alt="oeil">
                 </div>
-                
+
                 <label for="poste"> Poste recherché</label>
-                <input type="poste"  placeholder="Ex: chef de projet, cuisinier...">
+                <input type="poste" placeholder="Ex: chef de projet, cuisinier...">
                 
                 <label for="travail">Ou souhaitez-vous,travailler?</label>
                 <input type="text" placeholder="Ex: Essonne, Nantes, Bretagne...">
             </div>
-        </div>
-       <br> <label for=""> Types de contracts recherchés</label><br>
+            <span> Types de contracts recherchés</span><br>
+            
         <div class="trois">
 
-            
-            <input type="checkbox" value="CDI" name="choix" id="un" checked>
-            <label for="un">CDI</label>
-            
-            <input type="checkbox" value="CDD" name="choix" id="deux">
-            <label for="deux">CDD</label>
+                <input type="checkbox" value="CDI" name="choix" id="un" checked>
+                <label for="un">CDI</label>
+               
+                <input type="checkbox" value="CDD" name="choix" id="deux">
+                <label for="deux">CDD</label>
 
-            
-            <input type="checkbox" value="Indépendant/Franchisé" name="choix" id="trois">
-            <label for="trois">Indépendant/ Franchisé</label>
+                <input type="checkbox" value="Indépendant/Franchisé" name="choix" id="trois">
+                <label for="trois">Indépendant/ Franchisé</label>
 
-            
-            <input type="checkbox" value="Intérim" name="choix" id="quatre">
-            <label for="quatre">Intérim</label>
+                <input type="checkbox" value="Intérim" name="choix" id="quatre">
+                <label for="quatre">Intérim</label>
 
-            
-            <input type="checkbox" value="Stage" name="choix" id="cinq">
-            <label for="cinq">Stage</label>
+                <input type="checkbox" value="Stage" name="choix" id="cinq">
+                <label for="cinq">Stage</label>
 
-            
-            <input type="checkbox" value="Alternance/Apprentissage" name="choix" id="six">
-            <label for="six">Alternance/ Apprentissage</label>
+                <input type="checkbox" value="Alternance/Apprentissage" name="choix" id="six">
+                <label for="six">Alternance/ Apprentissage</label>
 
-            
-            <label for=""style="width: 140px; background-color: #FFF;"><a href="">+ de type de contrat</a></label>
-
-        </div>   
+                <label for=""style="width: 140px; background-color: #FFF;">
+                    <a href="">+ de type de contrat</a>
+                </label>
+        </div>  
         <div class="condition">
+
             <div>
+                <br>
 
-                J'accepte les <a href="">conditions générales</a>  pour créer mon compte,<br>
+                J'accepte les <a href="">conditions générales</a> pour créer mon compte,<br>
                 bénéficier des services de matching et postuler aux offres :
-            
             </div>
-        <div id="fin">
-            <input type="radio" name="position" id="oui" value="oui" required>
-            <label for="oui">OUI</label>
-            
 
-            <input type="radio" name="position" id="non" value="non">
-            <label for="non">NON</label>    
+                <br>
 
-        </div>
-        </div>    
+            <div id="fin">
+    
+                <input type="radio" name="position" id="oui" value="oui" required checked>
+                <label for="oui">OUI</label>
+                
+                <input type="radio" name="position" id="non" value="non" checked>
+                <label for="non">NON</label> 
+                
+            </div>
+        </div> 
+
             <button type="submit" value="Continuer">Continuer</button>
+
+        </div>         
     </form>
 </main>
 </body>
